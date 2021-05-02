@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script type="application/javascript">
+        function checkdata()   
+            {
+                // cria uma referencia dos elemento inseridos aos quais queremos validar
+                var username = document.getElementById("name");
+                var emailid = document.getElementById("email");
+                // checa se o campo username esta vazio
+                    if(username.value == ""){
+                        alert("Please enter the name");
+                        fname.focus();
+                        return false;
+                    }
+                // checa se o campo email esta vazio
+                    if(emailid.value == ""){
+                        alert("Please enter the email");
+                        emailid.focus();
+                        return false;
+                    }
+                // se tudo estiver bem retorne verdadeiro.
+                return true;
+            }
+    </script>
+    <title>Contact Details</title>
+    </head>
+    <body>
+        <h2>Enter your contact Details:</h2> <br>
+        <form id="form1" onsubmit = "return checkdata()">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <br>
+            <label for="email">E-mail ID :</label>
+            <input type="text" id="email" name="email">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+</html>
