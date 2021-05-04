@@ -18,4 +18,4 @@ Check the changes you have made
 Mark the changes for commit
 Commit the changes
 Push the code to GitHub
-Objective: Working with Git on Theia
+Objective: Working with Git on Theia // Brazil 2021/05/04 11:49
